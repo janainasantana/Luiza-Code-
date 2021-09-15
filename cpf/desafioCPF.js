@@ -28,7 +28,6 @@ function validaCPF(cpf) {
             soma += multiplicador * numero;
         }
 
-
         digito = 0;
         resto = (soma * 10) % 11;
 
@@ -37,7 +36,6 @@ function validaCPF(cpf) {
         } else {
             digito = resto;
         }
-
 
         if (digito !== parseInt(cpf.charAt(10))) {
             console.log("cpf inválido!");
